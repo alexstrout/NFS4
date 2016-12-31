@@ -1,0 +1,13 @@
+config.dat	000C04	00->01 = enable cheats
+
+---
+In progress:
+---
+Disable Hot Pursuit difficulty override:
+nfs4.exe+C5AB8 - C7 05 104D7C00 01000000 - mov [nfs4.exe+3C4D10],00000001 { [00000001] }
+nfs4.exe+C5A9C - C7 05 104D7C00 01000000 - mov [nfs4.exe+3C4D10],00000001 { [00000001] }
+nfs4.exe+C5AA8 - C7 05 104D7C00 02000000 - mov [nfs4.exe+3C4D10],00000002 { [00000001] }
++ 2 more, possibly splitscreen?
+
+C705104D7C0001000000 -> 90909090909090909090
+C705104D7C0002000000 -> 90909090909090909090
