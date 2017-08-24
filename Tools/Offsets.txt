@@ -12,6 +12,11 @@ nfs4.exe	0C4ABB	890D104D7C00 -> 909090909090 = disable Career difficulty overrid
 nfs4.exe	0C4AC3	8915104D7C00 -> 909090909090 = disable Career difficulty override (Part 3)
 nfs4.exe	0C4B27	A3104D7C00 -> 9090909090 = disable Career difficulty override (Part 4)
 
+nfs4.exe	000A4C	7409 -> EB09 = disable slow cops on Night Driving
+
+nfs4.exe	000A45	833DF84C7C0000 -> 833D104D7C0000 = slow cops on Amateur difficulty instead of Night Driving (Part 1)
+nfs4.exe	000A4C	7409 -> 7509 = slow cops on Amateur difficulty instead of Night Driving (Part 2)
+
 ---
 In progress:
 ---
@@ -35,3 +40,7 @@ nfs4.exe+C56BB - 89 0D 104D7C00        - mov [nfs4.exe+3C4D10],ecx { [00000002] 
 nfs4.exe+C56C3 - 89 15 104D7C00        - mov [nfs4.exe+3C4D10],edx { [00000002] }
 nfs4.exe+C5727 - A3 104D7C00           - mov [nfs4.exe+3C4D10],eax { [00000002] }
 + more??
+
+Disable slow cops on Night Driving:
+nfs4.exe+1645 - 83 3D F84C7C00 00     - cmp dword ptr [nfs4.exe+3C4CF8],00 { [00000000] }
+nfs4.exe+164C - 74 09                 - je nfs4.exe+1657

@@ -8,6 +8,13 @@
       <VariableType>4 Bytes</VariableType>
       <Address>007C4D10</Address>
     </CheatEntry>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"Night Mode"</Description>
+      <LastState Value="0" RealAddress="007C4CF8"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>nfs4.exe+3C4CF8</Address>
+    </CheatEntry>
   </CheatEntries>
   <CheatCodes>
     <CodeEntry>
@@ -425,6 +432,35 @@
         <Byte>5D</Byte>
         <Byte>5F</Byte>
         <Byte>5E</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Code :cmp dword ptr [nfs4.exe+3C4CF8],00 (Slow Cops on Night Mode)</Description>
+      <Address>00401645</Address>
+      <ModuleName>nfs4.exe</ModuleName>
+      <ModuleNameOffset>1645</ModuleNameOffset>
+      <Before>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+        <Byte>75</Byte>
+        <Byte>12</Byte>
+      </Before>
+      <Actual>
+        <Byte>83</Byte>
+        <Byte>3D</Byte>
+        <Byte>F8</Byte>
+        <Byte>4C</Byte>
+        <Byte>7C</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Actual>
+      <After>
+        <Byte>74</Byte>
+        <Byte>09</Byte>
+        <Byte>C7</Byte>
+        <Byte>45</Byte>
+        <Byte>F8</Byte>
       </After>
     </CodeEntry>
   </CheatCodes>
